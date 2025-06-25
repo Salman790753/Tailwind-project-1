@@ -1,4 +1,4 @@
-import { resolce, resolve } from "path";
+import { resolve } from "path";
 import { defineConfig } from "vite";
 
 export default defineConfig({
@@ -6,7 +6,7 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 main: resolve(__dirname, "index.html"),
-                news:resolve(__dirname, "news.html");
+                news:resolve(__dirname, "news.html"),
             }
         }
     }
